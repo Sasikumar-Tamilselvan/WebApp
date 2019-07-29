@@ -1,0 +1,10 @@
+{
+  "name": "PersonalWeatherApp",
+  "version": "1.0.0",
+  "description": "Personal Weather App)",
+  "main": "index.js",
+  "repository": "https://github.com/Sasikumar-Tamilselvan/WebApp.git",
+  "author": "contactsasit@gmail.com",
+  "license": "MIT",
+  "private": null
+}
