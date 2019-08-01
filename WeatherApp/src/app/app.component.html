@@ -1,21 +1,172 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<aside class="side-menu__container" [ngClass]="{'side-menu__container-active': showMenu}" (click)="toggleMenu()">
+  <nav class="slide-menu" [ngClass]="{'slide-menu-active': showMenu}" (click)="$event.stopImmediatePropagation();">
+    <section class="menu-header">
+      <span class="greeting__text">Welcome</span>
+      <div >
+        <!-- <img src="../assets/weather-icon1.png" alt="profile-image"
+              class="profile__image"> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 532.425 426.329">
+                <g id="Group_46" data-name="Group 46" transform="translate(-3963.575 2986.164)">
+                  <g id="Fog_Icon" data-name="Fog Icon" transform="translate(-500.056 -2062.164)">
+                    <circle id="Ellipse_36" data-name="Ellipse 36" cx="213.164" cy="213.164" r="213.164" transform="translate(4510.37 -924)" fill="#fdccb9" opacity="0.14"/>
+                    <circle id="Ellipse_37" data-name="Ellipse 37" cx="181.506" cy="181.506" r="181.506" transform="translate(4542.028 -892.342)" fill="#fdccb9" opacity="0.14"/>
+                    <circle id="Ellipse_38" data-name="Ellipse 38" cx="156.883" cy="156.883" r="156.883" transform="translate(4566.651 -867.719)" fill="#fdccb9" opacity="0.14"/>
+                    <circle id="Ellipse_35" data-name="Ellipse 35" cx="134.894" cy="134.894" r="134.894" transform="translate(4588.68 -845.611)" fill="#ff4d00" opacity="0.14"/>
+                  </g>
+                  <g id="Group_40" data-name="Group 40" transform="translate(501.265 54.08)" opacity="0.31">
+                    <ellipse id="Ellipse_40" data-name="Ellipse 40" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3648.438 -2747.147)" fill="#fff"/>
+                    <ellipse id="Ellipse_41" data-name="Ellipse 41" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3708.386 -2747.147)" fill="#fff"/>
+                    <ellipse id="Ellipse_42" data-name="Ellipse 42" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3655.182 -2730.479)" fill="#fff"/>
+                    <ellipse id="Ellipse_43" data-name="Ellipse 43" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3578 -2736.293)" fill="#fff"/>
+                    <ellipse id="Ellipse_44" data-name="Ellipse 44" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3732.365 -2716.136)" fill="#fff"/>
+                    <ellipse id="Ellipse_45" data-name="Ellipse 45" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3774.328 -2751.41)" fill="#fff"/>
+                    <ellipse id="Ellipse_46" data-name="Ellipse 46" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3601.979 -2713.036)" fill="#fff"/>
+                    <ellipse id="Ellipse_47" data-name="Ellipse 47" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3684.407 -2705.283)" fill="#fff"/>
+                    <ellipse id="Ellipse_48" data-name="Ellipse 48" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3768.333 -2730.479)" fill="#fff"/>
+                    <ellipse id="Ellipse_49" data-name="Ellipse 49" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3684.407 -2758)" fill="#fff"/>
+                    <ellipse id="Ellipse_50" data-name="Ellipse 50" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3607.224 -2751.41)" fill="#fff"/>
+                    <ellipse id="Ellipse_51" data-name="Ellipse 51" cx="53.203" cy="27.521" rx="53.203" ry="27.521" transform="translate(3667.921 -2716.136)" fill="#fff"/>
+                  </g>
+                  <g id="Group_41" data-name="Group 41" transform="translate(644 -14.92)" opacity="0.31">
+                    <ellipse id="Ellipse_40-2" data-name="Ellipse 40" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3650.175 -2754.281)" fill="#fff"/>
+                    <ellipse id="Ellipse_41-2" data-name="Ellipse 41" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3615.806 -2754.281)" fill="#fff"/>
+                    <ellipse id="Ellipse_42-2" data-name="Ellipse 42" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3646.309 -2748.571)" fill="#fff"/>
+                    <ellipse id="Ellipse_43-2" data-name="Ellipse 43" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3690.559 -2750.563)" fill="#fff"/>
+                    <ellipse id="Ellipse_44-2" data-name="Ellipse 44" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3602.058 -2743.657)" fill="#fff"/>
+                    <ellipse id="Ellipse_45-2" data-name="Ellipse 45" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3578 -2755.742)" fill="#fff"/>
+                    <ellipse id="Ellipse_46-2" data-name="Ellipse 46" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3676.812 -2742.594)" fill="#fff"/>
+                    <ellipse id="Ellipse_47-2" data-name="Ellipse 47" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3629.554 -2739.938)" fill="#fff"/>
+                    <ellipse id="Ellipse_48-2" data-name="Ellipse 48" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3581.437 -2748.571)" fill="#fff"/>
+                    <ellipse id="Ellipse_49-2" data-name="Ellipse 49" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3629.554 -2758)" fill="#fff"/>
+                    <ellipse id="Ellipse_50-2" data-name="Ellipse 50" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3673.804 -2755.742)" fill="#fff"/>
+                    <ellipse id="Ellipse_51-2" data-name="Ellipse 51" cx="30.503" cy="9.429" rx="30.503" ry="9.429" transform="translate(3639.005 -2743.657)" fill="#fff"/>
+                  </g>
+                  <g id="Group_42" data-name="Group 42" transform="translate(501 17.08)" opacity="0.31">
+                    <ellipse id="Ellipse_40-3" data-name="Ellipse 40" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3672 -2746.613)" fill="#fff"/>
+                    <ellipse id="Ellipse_41-3" data-name="Ellipse 41" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3752 -2746.613)" fill="#fff"/>
+                    <ellipse id="Ellipse_42-3" data-name="Ellipse 42" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3681 -2729.124)" fill="#fff"/>
+                    <ellipse id="Ellipse_43-3" data-name="Ellipse 43" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3578 -2735.224)" fill="#fff"/>
+                    <ellipse id="Ellipse_44-3" data-name="Ellipse 44" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3784 -2714.075)" fill="#fff"/>
+                    <ellipse id="Ellipse_45-3" data-name="Ellipse 45" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3840 -2751.086)" fill="#fff"/>
+                    <ellipse id="Ellipse_46-3" data-name="Ellipse 46" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3610 -2710.823)" fill="#fff"/>
+                    <ellipse id="Ellipse_47-3" data-name="Ellipse 47" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3720 -2702.688)" fill="#fff"/>
+                    <ellipse id="Ellipse_48-3" data-name="Ellipse 48" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3832 -2729.124)" fill="#fff"/>
+                    <ellipse id="Ellipse_49-3" data-name="Ellipse 49" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3720 -2758)" fill="#fff"/>
+                    <ellipse id="Ellipse_50-3" data-name="Ellipse 50" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3617 -2751.086)" fill="#fff"/>
+                    <ellipse id="Ellipse_51-3" data-name="Ellipse 51" cx="71" cy="28.876" rx="71" ry="28.876" transform="translate(3698 -2714.075)" fill="#fff"/>
+                  </g>
+                  <g id="Group_44" data-name="Group 44" transform="translate(385.575 45.08)" opacity="0.31">
+                    <ellipse id="Ellipse_40-4" data-name="Ellipse 40" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3654.881 -2746.613)" fill="#fff"/>
+                    <ellipse id="Ellipse_41-4" data-name="Ellipse 41" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3720.312 -2746.613)" fill="#fff"/>
+                    <ellipse id="Ellipse_42-4" data-name="Ellipse 42" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3662.242 -2729.124)" fill="#fff"/>
+                    <ellipse id="Ellipse_43-4" data-name="Ellipse 43" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3578 -2735.224)" fill="#fff"/>
+                    <ellipse id="Ellipse_44-4" data-name="Ellipse 44" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3746.484 -2714.075)" fill="#fff"/>
+                    <ellipse id="Ellipse_45-4" data-name="Ellipse 45" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3792.285 -2751.086)" fill="#fff"/>
+                    <ellipse id="Ellipse_46-4" data-name="Ellipse 46" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3604.172 -2710.823)" fill="#fff"/>
+                    <ellipse id="Ellipse_47-4" data-name="Ellipse 47" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3694.139 -2702.688)" fill="#fff"/>
+                    <ellipse id="Ellipse_48-4" data-name="Ellipse 48" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3785.742 -2729.124)" fill="#fff"/>
+                    <ellipse id="Ellipse_49-4" data-name="Ellipse 49" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3694.139 -2758)" fill="#fff"/>
+                    <ellipse id="Ellipse_50-4" data-name="Ellipse 50" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3609.897 -2751.086)" fill="#fff"/>
+                    <ellipse id="Ellipse_51-4" data-name="Ellipse 51" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3676.146 -2714.075)" fill="#fff"/>
+                  </g>
+                  <g id="Group_45" data-name="Group 45" transform="translate(587.575 -67.92)" opacity="0.31">
+                    <ellipse id="Ellipse_40-5" data-name="Ellipse 40" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3654.881 -2746.613)" fill="#fff"/>
+                    <ellipse id="Ellipse_41-5" data-name="Ellipse 41" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3720.312 -2746.613)" fill="#fff"/>
+                    <ellipse id="Ellipse_42-5" data-name="Ellipse 42" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3662.242 -2729.124)" fill="#fff"/>
+                    <ellipse id="Ellipse_43-5" data-name="Ellipse 43" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3578 -2735.224)" fill="#fff"/>
+                    <ellipse id="Ellipse_44-5" data-name="Ellipse 44" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3746.484 -2714.075)" fill="#fff"/>
+                    <ellipse id="Ellipse_45-5" data-name="Ellipse 45" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3792.285 -2751.086)" fill="#fff"/>
+                    <ellipse id="Ellipse_46-5" data-name="Ellipse 46" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3604.172 -2710.823)" fill="#fff"/>
+                    <ellipse id="Ellipse_47-5" data-name="Ellipse 47" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3694.139 -2702.688)" fill="#fff"/>
+                    <ellipse id="Ellipse_48-5" data-name="Ellipse 48" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3785.742 -2729.124)" fill="#fff"/>
+                    <ellipse id="Ellipse_49-5" data-name="Ellipse 49" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3694.139 -2758)" fill="#fff"/>
+                    <ellipse id="Ellipse_50-5" data-name="Ellipse 50" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3609.897 -2751.086)" fill="#fff"/>
+                    <ellipse id="Ellipse_51-5" data-name="Ellipse 51" cx="58.07" cy="28.876" rx="58.07" ry="28.876" transform="translate(3676.146 -2714.075)" fill="#fff"/>
+                  </g>
+                  <g id="Group_43" data-name="Group 43" transform="translate(442 27.08)" opacity="0.31">
+                    <ellipse id="Ellipse_40-6" data-name="Ellipse 40" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3626.861 -2754.281)" fill="#fff"/>
+                    <ellipse id="Ellipse_41-6" data-name="Ellipse 41" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3668.446 -2754.281)" fill="#fff"/>
+                    <ellipse id="Ellipse_42-6" data-name="Ellipse 42" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3631.54 -2748.571)" fill="#fff"/>
+                    <ellipse id="Ellipse_43-6" data-name="Ellipse 43" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3578 -2750.563)" fill="#fff"/>
+                    <ellipse id="Ellipse_44-6" data-name="Ellipse 44" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3685.079 -2743.657)" fill="#fff"/>
+                    <ellipse id="Ellipse_45-6" data-name="Ellipse 45" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3714.188 -2755.742)" fill="#fff"/>
+                    <ellipse id="Ellipse_46-6" data-name="Ellipse 46" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3594.634 -2742.594)" fill="#fff"/>
+                    <ellipse id="Ellipse_47-6" data-name="Ellipse 47" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3651.812 -2739.938)" fill="#fff"/>
+                    <ellipse id="Ellipse_48-6" data-name="Ellipse 48" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3710.03 -2748.571)" fill="#fff"/>
+                    <ellipse id="Ellipse_49-6" data-name="Ellipse 49" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3651.812 -2758)" fill="#fff"/>
+                    <ellipse id="Ellipse_50-6" data-name="Ellipse 50" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3598.272 -2755.742)" fill="#fff"/>
+                    <ellipse id="Ellipse_51-6" data-name="Ellipse 51" cx="36.906" cy="9.429" rx="36.906" ry="9.429" transform="translate(3640.376 -2743.657)" fill="#fff"/>
+                  </g>
+                </g>
+              </svg>
+              
+      </div>
+      <div class="account-details">
+      <span class="name__text">Sasikumar Tamilselvan</span>
+      <span class="email__text">contactsasit@gmail.com</span>
+      </div>
+    </section>
+    <section class="menu-body">
 
-<router-outlet></router-outlet>
+    </section>
+    <section class="menu-footer">
+  
+    </section>
+  </nav>
+</aside>
+<div class="root-container">
+  <header class="main__header" [ngClass]="{'main__header-dark': darkModeActive}">
+    <div class="left__section">
+    <svg (click)="toggleMenu()" class="hamburger__icon" id="Menu_Burger_Icon" data-name="Menu Burger Icon"
+    viewBox="31.5 30 49.9 32">
+      <defs>
+        <style>.hamburger__icon__fill {
+          fill: #594e78
+        }</style>
+      </defs>
+      <rect id="Rectangle_1" width="49.9" height="4" [ngClass]="{'hamburger__icon__fill-dark': darkModeActive}"
+            class="hamburger__icon__fill" data-name="Rectangle 1" rx="2"
+            transform="translate(31.5 58)"/>
+      <rect id="Rectangle_2" width="49.9" height="4" [ngClass]="{'hamburger__icon__fill-dark': darkModeActive}"
+            class="hamburger__icon__fill" data-name="Rectangle 2" rx="2"
+            transform="translate(31.5 44)"/>
+      <rect id="Rectangle_3" width="49.9" height="4" [ngClass]="{'hamburger__icon__fill-dark': darkModeActive}"
+            class="hamburger__icon__fill" data-name="Rectangle 3" rx="2"
+            transform="translate(31.5 30)"/>
+    </svg>
+    <svg class="logo__icon" viewBox="150.3 22.2 213.7 42.8">
+      <path fill="#FF8B8B" d="M150.3 65V22.2L193 65z" data-name="Path 1"/>
+      <path fill="#451F52" d="M193.1 65h-42.8L193 22.2z" data-name="Path 2"/>
+      <text [ngClass]="{'logo__text-dark': darkModeActive}" class="logo__text" fill="#432c85"
+            font-family="SegoeUI-Semibold,Segoe UI" font-size="25" font-weight="600"
+            letter-spacing=".1em" transform="translate(237 56)">
+        <tspan x="0" y="0">Vaanilai</tspan>
+      </text>
+    </svg>
+    </div>
+
+    <h3 class="date__text">Today</h3>
+
+    <div class="mode-toggle__container">
+      <span class="mode-toggle__text">Light</span>
+
+      <label class="toggle-button__container">
+          <input (click)="modeToggleSwitch()" type="checkbox" class="mode-toggle__input"/>
+          <span [ngClass]="{'mode-toggle__bg-checked': darkModeActive}" class="mode-toggle__bg"></span>
+          <span [ngClass]="{'mode-toggle__circle-checked': darkModeActive}" class="mode-toggle__circle"></span>
+        </label>
+  
+  
+      <span class="mode-toggle__text">Dark</span>
+    </div>
+  </header>
+
+  <main class="main__container">
+    <div class="main-container__bg" [ngClass]="{'main-container__bg-dark': darkModeActive}"></div>
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer class="main__footer">
+    <small class="copyright__text" [ngClass]="{'copyright__text-dark': darkModeActive}">Copyright © 2019 Vaanilai</small>
+  </footer>
+</div>
